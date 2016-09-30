@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="edu.sjsu.akshaynanda.whatsfordinner.MealsActivity">
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Meals screen has not been created yet.\nAll other screens are working and functional.\nThis message has to be put, because Meals is the 1st clickable items."/>
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:id="@+id/linearLayout3"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:paddingBottom="0dp"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="105dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/screen_meals"
+                android:layout_weight="0.4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Weekly Meals Selection"
+                android:id="@+id/textView13"
+                android:layout_marginLeft="0dp"
+                android:textColor="#ff4500"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Changing recipe - A click-away"
+            android:textColor="#0000ff"
+
+            android:id="@+id/textView17"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView16"
+                        android:textColor="#000000"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Sunday"
+                        android:id="@+id/textView10"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Monday"
+                        android:id="@+id/textView19"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Tuesday"
+                        android:id="@+id/textView20"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Wednesday"
+                        android:id="@+id/textView21"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Thursday"
+                        android:id="@+id/textView22"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Friday"
+                        android:id="@+id/textView23"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Saturday"
+                        android:id="@+id/textView24"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="top|center"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/breakfast_row">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Breakfast"
+                        android:id="@+id/textView18"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_sun_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_mon_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_tue_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_wed_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_thu_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_fri_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/b_sat_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="top|center"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/lunch_row" >
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Lunch"
+                        android:id="@+id/textView26"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_sun_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_mon_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_tue_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_wed_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_thu_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_fri_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/l_sat_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="top|center"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/dinner_row" >
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Dinner"
+                        android:id="@+id/textView25"
+                        android:background="#ffa500"
+                        android:textColor="#ffffff"
+                        android:padding="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_sun_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_mon_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_tue_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_wed_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_thu_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_fri_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+
+                    <Button
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eating out"
+                        android:id="@+id/d_sat_button"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:clickable="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+
